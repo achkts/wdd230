@@ -22,8 +22,8 @@ header {
 
 nav {
    background-color: #2a9d8f;
-   display: grid;
-   grid-template-columns: 1fr;
+   display: flex;
+   flex-direction: column;
 }
 
 section {
@@ -67,8 +67,12 @@ section .card {
     grid-template-columns: 1fr;
 }
 
-section ul {
-    list-style-type: none;
+li {
+    text-align: left;
+}
+
+li::marker {
+    content: counter(list-item)": ";
 }
 
 header img {
@@ -79,9 +83,12 @@ header img {
 
 main h2 {
     border-bottom: solid 2px black;
+    margin: 3rem 1rem;
 }
 
 main {
     max-width: 500px;
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
 }
