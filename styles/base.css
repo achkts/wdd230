@@ -74,7 +74,7 @@ section ul {
 header img {
     display: inline-block;
     border-radius:100px;
-    /* box-shadow: 10px 10px 5px #ffc300; */
+    box-shadow: 7px 0px 5px #ffc300;
 }
 
 main h2 {
