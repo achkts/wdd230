@@ -1,0 +1,21 @@
+@media (min-width: 320px) {
+    
+    main{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 481px) {
+
+    main{
+        grid-template-columns: 1 fr 1fr;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

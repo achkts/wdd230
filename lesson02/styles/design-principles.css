@@ -13,11 +13,9 @@ header {
     background-color: #264653;
     color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    padding: 1em
 }
 
 section {
@@ -45,11 +43,22 @@ section h2, h3 {
     margin-top: 0;
 }
 
-section .card {
+section.card {
     display: grid;
     grid-template-columns: 1fr;
+    background-color: aliceblue;
+    
 }
 
+section img {
+    margin: 15px auto;
+    border: solid 1px darkgrey;
+}
+
+section .description {
+    text-align: left;
+    padding: 1rem;
+}
 
 main h2 {
     border-bottom: solid 2px black;
