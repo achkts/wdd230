@@ -17,13 +17,40 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1em;
-    padding: 1em
+    padding: 1em;
+    position: relative;
 }
 
 nav {
    background-color: #2a9d8f;
    display: flex;
    flex-direction: column;
+}
+
+.active::before, .active::after {
+    content: "⭐";
+}
+
+nav a {
+    display: none;
+}
+
+nav.open a {
+    display: block;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
 }
 
 section {
@@ -91,4 +118,9 @@ main {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.map iframe {
+    width: 100%;
+    min-height: 400px;
 }

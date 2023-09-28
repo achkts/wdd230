@@ -3,6 +3,14 @@
     flex-direction: row;
    }
 
+   nav a {
+    display: block;
+   }
+
+   #menu {
+    display: none;
+   }
+
    main {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 80%;
@@ -14,5 +22,9 @@
 
   main .card:first-of-type {
     grid-column: 1/3; 
+  }
+
+  .map {
+    grid-column: 1/4;
   }
 }
