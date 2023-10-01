@@ -2,5 +2,81 @@
 
 
 body {
-    font-family: 'Tinos', 'sans serif';
+    font-family: 'Tinos', sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Open Sans', serif;
+    color: #023047;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.frame {
+    text-align: center;
+}
+
+.colored {
+    background-color: #66d8f5;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: #023047;
+    color: white;
+    font-weight: 700;
+}
+
+.secondary {
+    background-color: #66d8f5;
+    font-weight: 700;
+}
+
+.accent1 {
+    background-color: #FB8500;
+    font-weight:700;
+     
+}
+
+.accent2 {
+    background-color: #FBB703;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
