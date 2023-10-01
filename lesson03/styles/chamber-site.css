@@ -77,6 +77,5 @@ table {
 img {
     display: block;
     margin: 0 auto;
-    overflow-clip-margin: content-box;
     overflow: clip;
 }
