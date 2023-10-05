@@ -7,7 +7,7 @@
     <meta name="description" content="A website dedicated to the Riverton City of Commerce">
     <meta name="author" content="Audrey Checketts">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Audrey Checketts - Riverton City Chamber of Commerce">
@@ -16,50 +16,55 @@
     <meta property="og:url" content="">
 </head>
 <body>
-    <header>
-        <div>
-            <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
-        </div>
-        <section class="city">
-            <h1 id="city">Riverton City</h1>
-            <h2 id="commerce">Chamber of Commerce</h2>
-        </section>
-    </header>
-    <nav>
-        <a href="#" class="active">Home</a>
-        <a href=""></a>
-        <a href=""></a>
-        <!-- <a href="#" onClick="window.open('https://www.byui.edu/')">BYU-Idaho</a>
-        <a href="#" onClick="window.open('https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p6#p6', '_blank')">
-        Scripture</a> -->
-    </nav>
-    <button>Call to Action</button>
-    <section class="card">
-        <h2>Current Events</h2>
-        <p>Here is a calendar for current events.</p>
-    </section>
-    <section class="card">
-        <h2>Weather</h2>
-        <p>Here is the current temperature for today.</p>
-    </section>
-    <section class="card">
-        <h2>Company Spotlights</h2>
-        <p>One to three company 'spotlights' and their websites?</p>
-        <div>
-            <h3>Company 1</h3>
-        </div>
-        <div>
-            <h3>Company 2</h3>
-        </div>
-        <div>
-            <h3>Company 3</h3>
-        </div>
-    </section>
-    <footer>
-        <p>Contact Us</p>
-        <p>Audrey Checketts - project for WDD 230</p>
-        <p id="lastModified">1981</p>
-    </footer>
+    <div class="content">
+        <header>
+            <section class="city">
+                <h1 id="city">Riverton City</h1>
+                <h2 id="commerce">Chamber of Commerce</h2>
+            </section>
+            <div>
+                <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
+            </div>
+        </header>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href=""></a>
+            <a href=""></a>
+            <!-- <a href="#" onClick="window.open('https://www.byui.edu/')">BYU-Idaho</a>
+            <a href="#" onClick="window.open('https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p6#p6', '_blank')">
+            Scripture</a> -->
+        </nav>
+        <button>Call to Action</button>
+        <main>
+            <section class="card">
+                <h2>Current Events</h2>
+                <p>Here is a calendar for current events.</p>
+            </section>
+            <section class="card">
+                <h2>Company Spotlights</h2>
+                <p>One to three company 'spotlights' and their websites?</p>
+                <div>
+                    <h3>Company 1</h3>
+                </div>
+                <div>
+                    <h3>Company 2</h3>
+                </div>
+                <div>
+                    <h3>Company 3</h3>
+                </div>l
+            </section>
+            <section class="card">
+                <h2>Weather</h2>
+                <p>Here is the current temperature for today.</p>
+            </section>
+        </main>
+    
+        <footer>
+            <p class="foot">Contact Us</p>
+            <p class="foot">Audrey Checketts - project for WDD 230</p>
+            <p id="lastModified" class="foot">1981</p>
+        </footer>
+    </div>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
 </body>

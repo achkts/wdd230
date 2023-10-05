@@ -3,14 +3,27 @@
 
 body {
     font-family: 'Tinos', 'Georgia', sans-serif;
-    color: #023047;
-    background-color: #white;
+    background-color: #023047;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content {
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    display: grid;
 }
 
 
 #commerce {
     font-family: 'Tinos', 'Georgia', sans-serif;
-    color: #FBB703;
+    color: #FF890B;
 }
 
 
@@ -31,6 +44,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 footer {
     background-color: #3e3e3e;
     color: white;
