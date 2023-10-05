@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Tinos:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Tinos', 'Georgia', sans-serif;
+    color: #023047;
+    background-color: #white;
+}
+
+
+#commerce {
+    font-family: 'Tinos', 'Georgia', sans-serif;
+    color: #FBB703;
+}
+
+
+h2, h3 {
+    font-family: 'Open Sans', serif;
+    color: #023047;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:#023047;
+    /* background-color:rgba(20,30,13, .7); */
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    background-color: #3e3e3e;
+    color: white;
+    font-family: 'Open Sans', serif;
+    font-size: 1em;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
