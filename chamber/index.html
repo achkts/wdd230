@@ -22,78 +22,73 @@
 <body>
     <div class="content">
         <header>
-            <section class="city">
-                <h1 id="city">Riverton City</h1>
-                <h2 id="commerce">Chamber of Commerce</h2>
-            </section>
-            <div>
-                <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
-            </div>
-            <button id="menu"></button>
+         
+          <section class="city">
+            <h1 id="city">Riverton City</h1>
+            <h2 id="commerce">Chamber of Commerce</h2>
 
+            <!--Ham Menu-->
+            <div id="menu"></div>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="dmSlider" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+
+          </section>
+          <div>
+              <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
+          </div>
         </header>
-        <nav>
+        <nav class="hidden">
             <a href="#" class="active">Home</a>
             <a href="#" class="active">Events </a>
             <a href="#" class="active">Businesses</a>
             <a href="#" class="active>">Contact Us</a>
-            <!-- <a href="#" onClick="window.open('https://www.byui.edu/')">BYU-Idaho</a>
-            <a href="#" onClick="window.open('https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng&id=p6#p6', '_blank')">
-            Scripture</a> -->
+            
         </nav>
         
         <main>
             <div><button id="us">About Us</button></div>
             <div>
-                <p>Welcome to the Riverton City Chamber of Commerce. Please take a look around and get to know the businesses that help our community thrive!</p>
+                <p class="about-overview">Welcome to the Riverton City Chamber of Commerce. Please take a look around and get to know the businesses that help our community thrive!</p>
             
                 <p class="about-overview">Riverton, Utah is a thriving town with a welcoming populace with a variety of needs. Family friendly businesses as well as those focused on serving those needs have thrived. The Chamber of Commerce's mission is to help local businesses grow and contribute back to the local culture and community. The Chamber does this by helping businesses find employees and connecting individuals with those businesses.</p>
                     <div><a id="joinUs" href="mailto:audreychecketts@gmail.com">Join Us</a></div>
             </div>
 
             <section class="calendarRow">
+             
                 <div>
-                    <h2>Calendar of Current Events</h2>    
-                    <iframe  src="https://calendar.google.com/calendar/embed?src=92d9c21164bc6f75cd7d948baf3587e72da0438141d36e21f052fb0a60951434%40group.calendar.google.com&ctz=America%2FDenver"></iframe>
+                  <h2 class="page-header">Calendar of Current Events</h2>
+                  <iframe  src="https://calendar.google.com/calendar/embed?src=92d9c21164bc6f75cd7d948baf3587e72da0438141d36e21f052fb0a60951434%40group.calendar.google.com&ctz=America%2FDenver"></iframe>
+                </div>
+              
+                <div>
+                  <h2 class="page-header">Company Spotlights</h2>
+                    <sl-carousel class="carousel-thumbnails" navigation loop>
+                      <sl-carousel-item>
+                        <img alt="Street tacos with corn tortilla, meat and cheese" src="images/rsz_tacomania.jpg">
+                        <a class="thumbnails" href="https://tacomaniautah.com/" target="_blank">Taco Mania</a>
+                      </sl-carousel-item>
+                      <sl-carousel-item>
+                        <img
+                          alt="A country coop store"
+                          src="images/ifa.jpg">
+                        <a class="thumbnails" href="http://countrystores.ifa-coop.com" target="_blank">IFA Country Store</a>
+                      </sl-carousel-item>
+                      <sl-carousel-item>
+                        <img alt="An animal grooming store" src="images/k9design.jpg">
+                        <a class="thumbnails" href="https://k9designpetgrooming.com" target="_blank">K9 Design</a>
+                      </sl-carousel-item>
+                    </sl-carousel>
                 </div>
                 
-                <div>
-                    <h2>Company Spotlights</h2>
-                    <sl-carousel class="carousel-thumbnails" navigation loop>
-                        <sl-carousel-item>Taco Mania
-                          <img
-                            alt="Street tacos with corn tortilla, meat and cheese"
-                            src="images/rsz_tacomania.jpg">
-                          https://tacomaniautah.com/
-                        </sl-carousel-item>
-                        <sl-carousel-item>IFA Country Store
-                          <img
-                            alt="A country coop store"
-                            src="images/ifa.jpg">
-                          http://countrystores.ifa-coop.com/
-                        </sl-carousel-item>
-                        <sl-carousel-item>K9 Design
-                            <img alt="An animal grooming store" src="images/k9design.jpg">
-                          https://k9designpetgrooming.com
-                        </sl-carousel-item>
-                        <!-- <sl-carousel-item>
-                          <img
-                            alt="A field of grass with the sun setting in the background (by Sapan Patel on Unsplash)"
-                            src="/assets/examples/carousel/field.jpg"
-                          />
-                        </sl-carousel-item>
-                        <sl-carousel-item>
-                          <img
-                            alt="A scenic view of a mountain with clouds rolling in (by V2osk on Unsplash)"
-                            src="/assets/examples/carousel/valley.jpg"
-                          />
-                        </sl-carousel-item> -->
-                      </sl-carousel>
-                </div>
             </section>
             <section class="card">
-                <h2>Weather</h2>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/40d52n111d94/riverton/?unit=us" data-label_1="RIVERTON" data-label_2="WEATHER" data-theme="original" >RIVERTON WEATHER</a>
+              <h2 class="page-header">Weather</h2>
+              <a class="weatherwidget-io" href="https://forecast7.com/en/40d52n111d94/riverton/?unit=us" data-label_1="RIVERTON" data-label_2="WEATHER" data-theme="original" >RIVERTON WEATHER</a>
             </section>
         </main>
     
@@ -106,5 +101,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>

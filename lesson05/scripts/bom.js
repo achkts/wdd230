@@ -3,7 +3,13 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
 button.addEventListener('click', () => {
-    if (input.value != '') {'Enter a book and chapter'}
+    //  if (input.value != '') {'Enter a book and chapter'}
+    //  if (input != '') {
+    //  message.innerHTML = `Thank you. Your favorite chapter is 
+    // ${input}.value`;
+    //  } else {
+    //     message.innerHTML = `Please enter a chapter.`;} 
+
 
     const li = document.createElement('li');
     const deleteButton = document.createElement('button');
