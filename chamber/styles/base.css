@@ -401,4 +401,6 @@ main {
     padding: 10px;
 }
 
-
+.carousel-thumbnails {
+    --aspect-ratio: 1/1;
+}
