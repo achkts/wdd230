@@ -130,7 +130,7 @@ main {
 	margin: 10px auto;
 	position: relative;
 	border: 1px solid rgba(0,0,0,.1);
-	height: 300px;
+	grid-column: 1/-1;
 }
 
 .hero img {
