@@ -417,3 +417,7 @@ main {
 	height: 100%;
 	object-fit: cover;
 }
+
+#wind-chill {
+    text-align: center;
+}
