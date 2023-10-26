@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: #3e3e3e;
+    color: white;
+    font-family: 'Arial', 'Verdana', sans-serif;
+    font-size: 1em;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
