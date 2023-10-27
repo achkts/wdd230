@@ -157,3 +157,9 @@ main {
 	white-space: nowrap;
 	font-family:"Barlow", serif;
 }
+
+.visits {
+    color: #264653;
+    font-weight: bolder;
+    font-size: larger;
+}
