@@ -35,4 +35,17 @@
         display: block;
     }
 
+     /* discover site */
+    .grid {
+    grid-template-columns: 1fr 2fr;
+    min-width: 600px;
+    
+    }
+
+    .right img:hover {
+        transform: scaleX(-1);
+    }
+
  }
+
+

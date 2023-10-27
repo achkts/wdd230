@@ -421,3 +421,30 @@ main {
 #wind-chill {
     text-align: center;
 }
+
+
+/* Discover webpage css */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 300px;
+    margin: 10px auto;
+}
+
+.sidebar, .right p {
+    text-align: center;
+    color:var(--headline-color-on-white);
+    font-weight: bold;
+}
+
+.weatherwidget-io {
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.visits {
+    color: #264653;
+    font-weight: bolder;
+    font-size: larger;
+}
+
