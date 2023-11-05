@@ -468,3 +468,8 @@ main {
     margin-top: 1.5rem;
     margin-left: 0;
 }
+
+#thank {
+    text-align: center;
+    font-size: 2rem;
+}

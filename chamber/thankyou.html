@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
+    <meta name="description" content="A website dedicated to the Riverton City of Commerce">
+    <meta name="author" content="Audrey Checketts">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Audrey Checketts - Riverton City Chamber of Commerce Join Thank You">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+
 </head>
 <body>
-    <main>
-        <div>Thank you for joining our community.</div>
-    </main>
-    <footer></footer>
+    <div class="content">
+        <header>
+         
+          <section class="city">
+            <h1 id="city">Riverton City</h1>
+            <h2 id="commerce">Chamber of Commerce</h2>
+
+            <!--Ham Menu-->
+            <div id="menu"></div>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="dmSlider" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+
+          </section>
+          <div>
+              <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
+          </div>
+        </header>
+        <nav class="hidden">
+            <a href="#" class="active">Home</a>
+            <a href="#" class="active">Events </a>
+            <a href="#" class="active">Businesses</a>
+            <a href="#" class="active>">Contact Us</a>
+            
+        </nav>
+        
+        <main id="thank">
+            <p>Thank you for joining!</p>
+            <p>We look forward to growing our community together.</p>
+        </main>
+    
+        <footer>
+            <p class="foot">Contact Us</p>
+            <p id='author' class="foot">Audrey Checketts - project for WDD 230</p>
+            <p id="lastModified" class="foot">1981</p>
+        </footer>
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+ 
+    <script src="scripts/join.js"></script>
 </body>
 </html>
-<div></div>
