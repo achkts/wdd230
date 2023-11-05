@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverton City Chamber of Commerce Join</title>
+    <meta name="description" content="A website dedicated to the Riverton City of Commerce">
+    <meta name="author" content="Audrey Checketts">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Audrey Checketts - Riverton City Chamber of Commerce Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+
+</head>
+<body>
+    <div class="content">
+        <header>
+         
+          <section class="city">
+            <h1 id="city">Riverton City</h1>
+            <h2 id="commerce">Chamber of Commerce</h2>
+
+            <!--Ham Menu-->
+            <div id="menu"></div>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+              <input id="dmSlider" type="checkbox">
+              <span class="slider round"></span>
+            </label>
+
+          </section>
+          <div>
+              <img id="hero-img" src="images/hero_image.jpg" alt="Image of Riverton City with church">
+          </div>
+        </header>
+        <nav class="hidden">
+            <a href="#" class="active">Home</a>
+            <a href="#" class="active">Events </a>
+            <a href="#" class="active">Businesses</a>
+            <a href="#" class="active>">Contact Us</a>
+            
+        </nav>
+        
+        <main id="joinMain">
+            <form action="thankyou.html">
+                <label for="fname">First name: *</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+
+                <label for="lname">Last name: *</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+
+                <label for="tposition">Title or Position:</label>
+                <input type="text" id="tposition" name="tposition" pattern="[A-Za-z0-9\- ]{7,}"><br><br>
+
+                <label for="email">Email: *</label>
+                <input type="text" id="email" name="email" placeholder="ex: user@example.com" required><br><br>
+
+                <label for="mobile">Mobile: *</label>
+                <input type="telephone" id="mobile" name="mobile" required><br><br>
+
+                <label for="business">Business/Organization Name: *</label>
+                <input type="text" id="business" name="business" required><br><br>
+
+                <label for="membership">Your Membership Level: *</label>
+                <div id="membershipDesc"></div>
+                <input type="text" id="membership" name="membership" placeholder="Select one" list="M1" required><br><br>
+                <datalist id="M1">
+                    <option>Non Profit</option>
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                </datalist>
+                
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="5"></textarea>
+
+                <label for="timestamp"></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <button class="submit bottom" type="submit">Join My Community</button>
+            </form>
+        </main>
+    
+        <footer>
+            <p class="foot">Contact Us</p>
+            <p id='author' class="foot">Audrey Checketts - project for WDD 230</p>
+            <p id="lastModified" class="foot">1981</p>
+        </footer>
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsivemenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+ 
+    <script src="scripts/join.js"></script>
+</body>
+</html>

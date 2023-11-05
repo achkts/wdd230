@@ -448,3 +448,23 @@ main {
     font-size: larger;
 }
 
+/* Join page */
+
+#joinMain {
+    background-color: #7d818b;
+    color: white;
+}
+
+#joinMain form {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+#joinMain label {
+    display: block;
+}
+
+#joinMain .submit.bottom {
+    margin-top: 1.5rem;
+    margin-left: 0;
+}
