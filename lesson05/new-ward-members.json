@@ -1,0 +1,71 @@
+[{
+    "familyName" : "Bartlett",
+    "movedIn" : "2020-12-20",
+    "numPeople" : 2,
+    "visitedByBishopric" : true,
+    "members" : [
+      {
+        "name" : "Jackson",
+        "gender" : "male",
+        "birthDate" : "1958-12-09"
+      },
+      {
+        "name" : "Lisa",
+        "gender" : "female",
+        "birthDate" : "1968-06-04"
+      }
+    ]
+ },
+    {
+    "familyName" : "Fleming-Morris",
+    "movedIn" : "2022-05-12",
+    "numPeople" : 4,
+    "visitedByBishopric" : true,
+    "members" : [
+        {
+            "name" : "Peter",
+            "gender" : "male",
+            "birthDate" : "1976-03-25"
+          },
+          {
+            "name" : "Samantha Louise",
+            "gender" : "female",
+            "birthDate" : "1981-07-16"
+          },
+          {
+            "name" : "Georgie",
+            "gender" : "female",
+            "birthDate" : "2000-11-28"
+          },
+          {
+            "name" : "Katherine",
+            "gender" : "female",
+            "birthDate" : "2011-06-15"
+          }
+    ]
+    },
+      {
+        "familyName" : "Borden",
+        "movedIn" : "2023-01-24",
+        "numPeople" : 3,
+        "visitedByBishopric" : false,
+        "members" : [
+            {
+                "name" : "Tyler",
+                "gender" : "male",
+                "birthDate" : "1990-06-14"
+              },
+              {
+                "name" : "Amy",
+                "gender" : "female",
+                "birthDate" : "1991-10-05"
+              },
+              {
+                "name" : "Lyndy Marion",
+                "gender" : "female",
+                "birthDate" : "2017-11-25"
+              }
+        ]
+      }
+    
+]
