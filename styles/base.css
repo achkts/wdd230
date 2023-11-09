@@ -95,13 +95,7 @@ section .card {
     grid-template-columns: 1fr;
 }
 
-li {
-    text-align: left;
-}
 
-li::marker {
-    content: counter(list-item)": ";
-}
 
 header img {
     display: inline-block;
@@ -162,4 +156,22 @@ main {
     color: #264653;
     font-weight: bolder;
     font-size: larger;
+}
+
+#lessons a::after {
+    content: " | ";
+    text-align: left;
+}
+
+#lessons a:last-child::after {
+    content: " ";
+}
+
+#lessons div {
+    text-align: left;
+    font-size: 20px;
+    content: none;
+    text-wrap: nowrap;
+    margin: 10px auto 5px 5px;
+    
 }
