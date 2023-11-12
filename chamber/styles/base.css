@@ -495,3 +495,8 @@ main {
     max-width: 200px;
     max-height: 100px;
   }
+
+  .memberLine {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
