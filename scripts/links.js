@@ -2,7 +2,7 @@ const baseURL = "https://achkts.github.io/wdd230/";
 
 // const linksURL = "data/links.json";
 
-const linksURL = "https://achkts.github.io/wdd230/data/links.json"
+const linksURL = "https://achkts.github.io/wdd230/data/links.json";
 
 const cards = document.querySelector('#lessons');
 

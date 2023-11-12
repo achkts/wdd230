@@ -1,0 +1,75 @@
+{
+    "members": [
+        {
+            "name": "Tacomania",
+            "address": "3673 W 13400 S, #G, Riverton, Utah 84065",
+            "phoneNumber": "801-989-7912",
+            "website": "https://www.facebook.com/TacomaniaUT/",
+            "imgUrl": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/294686868_469550678507501_1123540739016470752_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=6jhifHf4sSwAX9rsGmf&_nc_ht=scontent-sjc3-1.xx&oh=00_AfCSEQ8_0L4HC40eDLnGFowUuIzOy0j7TZbAmQXDa9vfdg&oe=6553196F",
+            "membershipLevel": "Silver",
+            "dateJoined": "2022"
+            
+        },
+        {
+            "name": "A-1 Driving School",
+            "address": "2364 W 12600S, #2E, Riverton, Utah 84065",
+            "phoneNumber": "801-943-2525",
+            "website": "https://www.a-1drivingschool.com/",
+            "imgUrl": "https://www.a-1drivingschool.com/assets/img/a-1-logo.png",
+            "membershipLevel": "Gold",
+            "dateJoined": "1995"
+            
+        },
+        {
+            "name": "ABC Great Beginnings",
+            "address": "12523 S 4150 W, Riverton, Utah 84065",
+            "phoneNumber": "801-316-1071",
+            "website": "https://abcgreatbeginnings.com/",
+            "imgUrl": "https://www.abcgreatbeginnings.com/wp-content/uploads/2015/09/logo.png",
+            "membershipLevel": "Bronze",
+            "dateJoined": "2009"
+            
+        },
+        {
+            "name": "Aubergine Kitchen",
+            "address": "4554 W Partridge Hill Lane, Riverton, Utah 84096",
+            "phoneNumber": "801-890-1038",
+            "website": "https://auberginekitchen.com/locations/riverton-ut/",
+            "imgUrl": "https://auberginekitchen.com/wp-content/uploads/2022/10/white-logo-1280x415.png",
+            "membershipLevel": "Gold",
+            "dateJoined": "2019"
+            
+        },
+        {
+            "name": "Bear-O Care",
+            "address": "1864 W 12600 S, #7-9, Riverton, Utah 84065",
+            "phoneNumber": "",
+            "website": "https://www.bearocare.org/",
+            "imgUrl": "https://static.wixstatic.com/media/fbd52d_516bb295a28b4cc98a6bf30ebdc00d59.png/v1/fill/w_344,h_53,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fbd52d_516bb295a28b4cc98a6bf30ebdc00d59.png",
+            "membershipLevel": "Gold",
+            "dateJoined": "1998"
+            
+        },
+        {
+            "name": "Flowerstone Frame & Art Studio",
+            "address": "2478 W 12600 S, #3, Riverton, Utah 84065",
+            "phoneNumber": "801-917-9727",
+            "website": "https://www.flowerstonestudio.com/",
+            "imgUrl": "https://static.wixstatic.com/media/87028e_5a5b0912a25e4817a0ad2f4d55229742~mv2.png/v1/fill/w_566,h_354,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/whiteAsset%20284.png",
+            "membershipLevel": "Silver",
+            "dateJoined": "2001"
+            
+        },
+        {
+            "name": "Odion",
+            "address": "4554 W Partridge Hill Lane, #D-105, Riverton, Utah 84096",
+            "phoneNumber": "801-878-7814",
+            "website": "https://odionmenswear.com/",
+            "imgUrl": "https://odionmenswear.com/cdn/shop/files/3_2211569e-d8ac-4b28-a37d-b0128f48e473.png?v=1690519376",
+            "membershipLevel": "Silver",
+            "dateJoined": "2012"
+            
+        }
+
+    ]
+}
