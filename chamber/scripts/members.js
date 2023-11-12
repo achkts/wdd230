@@ -20,7 +20,8 @@ getLinks(linksURL);
 const displayLinks = (members) => {
     members.forEach((member) => {
         let card = document.createElement("div");
-        
+        card.setAttribute('class', 'memberCard');
+
         // "name": "Tacomania",
         //     "address": "3673 W 13400 S, #G, Riverton, Utah 84065",
         //     "phone number": "801-989-7912",
@@ -29,12 +30,17 @@ const displayLinks = (members) => {
         //     "membership level": "Silver",
         //     "date joined": "2022"
         
+
+        let imgUrl = document.createElement("img");
+        imgUrl.setAttribute('src', member.imgUrl);
+        card.appendChild(imgUrl);
+
         let name = document.createElement("div");
         name.textContent = member.name;
         card.appendChild(name);
 
         let address = document.createElement("div");
-        address.textContent = member.address;
+        address.innerHTML = member.address;
         card.appendChild(address);
 
         let phoneNum = document.createElement("div");
@@ -45,9 +51,7 @@ const displayLinks = (members) => {
         website.textContent = member.website;
         card.appendChild(website);
 
-        let imgUrl = document.createElement("div");
-        imgUrl.textContent = member.imgUrl;
-        card.appendChild(imgUrl);
+       
 
         let membershipLevel = document.createElement("div");
         membershipLevel.textContent = member.membershipLevel;

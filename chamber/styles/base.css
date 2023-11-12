@@ -473,3 +473,20 @@ main {
     text-align: center;
     font-size: 2rem;
 }
+
+/* ------------- Members Page -------------- */
+
+#membersCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  }
+
+  .memberCard {
+    border: solid 1px rgb(193, 186, 186);
+    margin: 15px;
+    background-color: rgb(96, 82, 157);
+    color: white;
+    padding: 20px;
+
+  }
