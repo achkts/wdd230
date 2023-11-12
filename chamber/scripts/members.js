@@ -54,7 +54,7 @@ const displayLinks = (members) => {
         card.appendChild(dateJoined);
       
 
-        console.log(members);
+        // console.log(members);
         cards.appendChild(card);
     })
      
@@ -81,20 +81,26 @@ const displayList = (members) => {
         website.textContent = member.website;
         card.appendChild(website);
 
-       
-
-        let membershipLevel = document.createElement("div");
-        membershipLevel.textContent = member.membershipLevel;
-        card.appendChild(membershipLevel);
-
-        let dateJoined = document.createElement("div");
-        dateJoined.textContent = member.dateJoined;
-        card.appendChild(dateJoined);
-      
-
-        console.log(members);
+    
         lists.appendChild(card);
     })
      
 
 }
+
+const showGrid = document.getElementById('showGrid');
+const showList = document.getElementById('showList');
+
+showList.addEventListener('click', () => {
+    cards.classList.add('hide');
+    lists.classList.remove('hide');
+    showGrid.classList.remove('activeToggle');
+    showList.classList.add('activeToggle');
+})
+
+showGrid.addEventListener('click', () => {
+    cards.classList.remove('hide');
+    lists.classList.add('hide');
+    showGrid.classList.add('activeToggle');
+    showList.classList.remove('activeToggle');
+})

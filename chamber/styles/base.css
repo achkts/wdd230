@@ -488,6 +488,7 @@ main {
     background-color: rgb(96, 82, 157);
     color: white;
     padding: 20px;
+    font-size: 20px;
 
   }
 
@@ -498,5 +499,26 @@ main {
 
   .memberLine {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .memberLine:nth-child(even) {
+    background-color: #e2e8f6;
+    
+  }
+
+  #membersCard.hide, #membersList.hide {
+    display: none;
+  }
+
+  .activeToggle {
+    font-weight: bold;
+  }
+
+  .toggleButtons {
+    display: flex;
+    justify-content: center;
   }
