@@ -141,6 +141,18 @@ button {
     display: none;
 }
 
+.hideBanner {
+    display: none !important;
+}
+
+#bannerMeetUp {
+    display: flex;
+    background-color: var(--headline-color-on-color);
+    border: 1px solid var(--nav-background-color);
+    padding: 10px;
+    justify-content: space-between;
+}
+
 #joinUs {
     display: none;
 }
@@ -525,4 +537,8 @@ main {
   .toggleButtons {
     display: flex;
     justify-content: center;
+  }
+
+  #weatherInfo {
+    text-align: center;
   }

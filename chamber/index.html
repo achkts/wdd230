@@ -50,6 +50,12 @@
         </nav>
         
         <main>
+          <div id="bannerMeetUp">
+            <p>
+              Please join us and attend our meet and greet on Wednesday at 7:00 p.m. 
+            </p>
+            <div id="bannerClose">❌</div>
+          </div>
           <div class="hero">
             <picture>
                 <source srcset="images/work_hero_small.webp" media="(max-width: 400px)">
@@ -94,12 +100,9 @@
             <section class="card">
               <h2 class="page-header">Weather</h2>
               <!-- <a class="weatherwidget-io" href="https://forecast7.com/en/40d52n111d94/riverton/?unit=us" data-label_1="RIVERTON" data-label_2="WEATHER" data-theme="original" >RIVERTON WEATHER</a> -->
-              <div id="wind-chill">
-                <input id="temperature" value="40"> °F / 
-                <input id="windspeed" value="10"> mph  🌬
-                <p>Wind Chill: 
-                  <span id="windchill">N/A</span> ❄
-                </p>
+              <div id="weatherInfo">
+                <img id="weather-icon"><span id="current-temp"></span>&nbsp;&nbsp;
+                <span id="wind-chill"></span>
               </div>
             </section>
         </main>
@@ -114,6 +117,6 @@
     <script src="scripts/responsivemenu.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
-</body>
+    <script src="scripts/meetUp.js"></script>
+    </body>
 </html>
