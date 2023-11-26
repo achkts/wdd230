@@ -1,4 +1,4 @@
-const memberCarousel = document.getElementById('carousel');
+const memberCarousel = document.getElementById('thumbnails');
 
 function renderSpotlightMembers() {
     fetch('data/members.json')
