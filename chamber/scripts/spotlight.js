@@ -25,7 +25,7 @@ function renderSpotlightMembers() {
                     <p>Membership Level: ${member.membership_level}</p>
                 `;
 
-                cardContainer.appendChild(memberCard);
+                memberCarousel.appendChild(memberCard);
             });
         })
         .catch(error => console.error('Error fetching data:', error));
