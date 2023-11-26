@@ -49,7 +49,7 @@
         </nav>
         
         <main id="joinMain">
-            <form action="thankyou.html">
+            <form action="thankyou.html" method="get">
                 <label for="fname">First name: *</label>
                 <input type="text" id="fname" name="fname" required><br><br>
 
@@ -60,7 +60,7 @@
                 <input type="text" id="tposition" name="tposition" pattern="[A-Za-z0-9\- ]{7,}"><br><br>
 
                 <label for="email">Email: *</label>
-                <input type="text" id="email" name="email" placeholder="ex: user@example.com" required><br><br>
+                <input type="email" id="email" name="email" placeholder="ex: user@byui.edu" pattern=".*@byui.edu" required><br><br>
 
                 <label for="mobile">Mobile: *</label>
                 <input type="tel" id="mobile" name="mobile" required><br><br>
@@ -70,7 +70,7 @@
 
                 <label for="membership">Your Membership Level: *</label>
                 <div id="membershipDesc"></div>
-                <input type="text" id="membership" name="membership" placeholder="Select one" list="M1" required><br><br>
+                <input id="membership" name="membership" placeholder="Select one" list="M1" required><br><br>
                 <datalist id="M1">
                     <option>Non Profit</option>
                     <option>Bronze</option>
