@@ -114,6 +114,14 @@ body {
     gap: 1em;
 
 }
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin: 25px;
+    
+}
+
 /*  This rule name changes based upon the default button color   */
 
 button {
