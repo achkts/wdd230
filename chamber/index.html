@@ -15,8 +15,7 @@
     <meta property="og:image" content="">
     <meta property="og:url" content="">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/themes/light.css">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.9.0/cdn/shoelace-autoloader.js"></script>
+    
 
 </head>
 <body>
@@ -78,22 +77,12 @@
                   <iframe  loading="lazy" src="https://calendar.google.com/calendar/embed?src=92d9c21164bc6f75cd7d948baf3587e72da0438141d36e21f052fb0a60951434%40group.calendar.google.com&ctz=America%2FDenver"></iframe>
                 </div>
               
-                <div>
+                <div class="slideContainer">
                   <h2 class="page-header">Company Spotlights</h2>
-                    <sl-carousel class="carousel-thumbnails" navigation loop>
-                      <sl-carousel-item>
-                        <img loading="lazy" alt="Street tacos with corn tortilla, meat and cheese" src="images/tacomania_op.webp">
-                        <a class="thumbnails" href="https://tacomaniautah.com/" target="_blank">Taco Mania</a>
-                      </sl-carousel-item>
-                      <sl-carousel-item>
-                        <img loading="lazy" alt="A country coop store" src="images/ifa.webp">
-                        <a class="thumbnails" href="http://countrystores.ifa-coop.com" target="_blank">IFA Country Store</a>
-                      </sl-carousel-item>
-                      <sl-carousel-item>
-                        <img loading="lazy" alt="An animal grooming store" src="images/k9design.webp">
-                        <a class="thumbnails" href="https://k9designpetgrooming.com" target="_blank">K9 Design</a>
-                      </sl-carousel-item>
-                    </sl-carousel>
+                  <!-- Next and previous buttons -->
+                  <a id="prevSlide" class="prev" >&#10094;</a>
+                  <a id="nextSlide" class="next" >&#10095;</a>
+                    <div class="carousel-thumbnails"></div>
                 </div>
                 
             </section>
@@ -118,5 +107,7 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/meetUp.js"></script>
+    <script src="scripts/spotlight.js"></script>
+
     </body>
 </html>

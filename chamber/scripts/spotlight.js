@@ -1,38 +1,70 @@
-const memberCarousel = document.getElementById('thumbnails');
+const memberCarousel = document.querySelector('.carousel-thumbnails');
 
-function renderSpotlightMembers() {
-    fetch('data/members.json')
-    .then(response => response.json())
-        .then(jsonData => {
-            // Filter members with silver or gold status
-            const spotlightMembers = jsonData.members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+async function renderSpotlightMembers() {
 
-            // Shuffle the spotlight members randomly
-            const shuffledMembers = shuffleArray(spotlightMembers);
+    try {
+        const response = await fetch('data/members.json');
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            const spotlightMembers = data.members.filter(member => member.membershipLevel === 'Silver Member' || member.membershipLevel === 'Gold Member');
 
-            // Display only the first 3 members randomly
-            const membersToShow = shuffledMembers.slice(0, Math.min(3, shuffledMembers.length));
+            const shuffleMembers = shuffleArray(spotlightMembers);
 
+            const membersToShow = shuffleMembers.slice(0, Math.min(3, shuffleMembers.length)); 
             membersToShow.forEach(member => {
-                const memberCard = document.createElement('div');
-                memberCard.classList.add('member');
+                const carouselItem = document.createElement('div');
+                carouselItem.classList.add('mySlides');
+                carouselItem.innerHTML = `
+                    <img src="${member.imgUrl}" alt="${member.name} logo" />
+                    <a class="thumbnails" href="${member.website}" target="_blank">${member.name}</a>`
+            
+            memberCarousel.appendChild(carouselItem);
 
-                memberCard.innerHTML = `
-                    <h4>${member.name}</h4>
-                    <img src="images/${member.image}" alt="${member.name} logo" />
-                    <p>${member.address}</p>
-                    <a href="${member.website}" target="_blank">About Us</a>
-                    <p>Membership Level: ${member.membership_level}</p>
-                `;
-
-                memberCarousel.appendChild(memberCard);
-            });
-        })
-        .catch(error => console.error('Error fetching data:', error));
+                
+            })
+            showSlides(1);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }    
 }
+              
 
 // Initial rendering
 renderSpotlightMembers();
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    if(slides.length == 0){return};
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    console.log(slides, slideIndex);
+    slides[slideIndex-1].style.display = "flex";
+}
+const prevSlide = document.getElementById('prevSlide');
+prevSlide.addEventListener('click', () => {
+    plusSlides(-1);
+});
+
+const nextSlide = document.getElementById('nextSlide');
+nextSlide.addEventListener('click', () => {
+    plusSlides(1);
+});
 
 // Function to shuffle an array
 function shuffleArray(array) {

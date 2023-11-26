@@ -402,7 +402,7 @@ footer a:hover {
 .calendarRow {
     display: grid;
     grid-template-columns: 1fr;
-
+    grid-gap: 1rem;
 }
 
 h2{
@@ -423,10 +423,55 @@ main {
 .thumbnails {
     margin: 15px;
     padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slideContainer {
+    position: relative;
+   
 }
 
 .carousel-thumbnails {
-    --aspect-ratio: 1/1;
+    background-color: var(--paragraph-color-on-white);
+    min-height: 300px;
+    padding: 2rem;
+}
+
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .mySlides img {
+    max-height: 250px;
+  }
+  /* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .hero {
@@ -522,11 +567,8 @@ main {
   }
 
   .memberLine {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 15px;
-    padding: 5px;
-    margin-top: 10px;
+    display: block;
+
   }
 
   .memberLine:nth-child(even) {
@@ -545,6 +587,10 @@ main {
   .toggleButtons {
     display: flex;
     justify-content: center;
+  }
+
+  .toggleButtons button {
+    margin: 0;
   }
 
   #weatherInfo {

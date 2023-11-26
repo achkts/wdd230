@@ -46,6 +46,11 @@
         transform: scaleX(-1);
     }
 
+    .memberLine {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
  }
 
 
