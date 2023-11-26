@@ -80,6 +80,8 @@ h2 {
 img {
     max-width: 100%;
     box-sizing: border-box;
+    height: auto;
+
 }
 
 p {
@@ -195,6 +197,12 @@ button {
     /* grid-column: 1/3; */
 }
  
+p {
+    text-align: left;
+    color: var(--headline-color-on-white);
+    padding: 10px;
+    size: 10px;
+}
 
 /****************************************************************
 * *

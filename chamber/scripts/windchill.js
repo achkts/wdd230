@@ -1,5 +1,5 @@
 // Two input values
-const tempInput = document.getElementById('temperature');
+const tempInput = document.getElementById('current-temp');
 tempInput.addEventListener("keyup", getUpdate);
 
 const wspeedInput = document.getElementById('windspeed');
