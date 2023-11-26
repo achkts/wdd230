@@ -119,7 +119,7 @@ figcaption {
     text-align: center;
     font-weight: bold;
     margin: 25px;
-    
+
 }
 
 /*  This rule name changes based upon the default button color   */
@@ -527,7 +527,7 @@ main {
 /* Join page */
 
 #joinMain {
-    background-color: #7d818b;
+    background-color: #393b41;
     color: white;
 }
 

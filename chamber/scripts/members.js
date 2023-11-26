@@ -25,6 +25,7 @@ const displayLinks = (members) => {
 
         let imgUrl = document.createElement("img");
         imgUrl.setAttribute('src', member.imgUrl);
+        imgUrl.setAttribute('alt', member.name);
         card.appendChild(imgUrl);
 
         let name = document.createElement("div");
