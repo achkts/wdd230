@@ -2,53 +2,54 @@ const baseURL = "https://achkts.github.io/wdd230/scoots/scootsIndex.html";
 
 const linksURL = "https://achkts.github.io/wdd230/scoots/data/prices.json";
 
-const pricesTable = document.querySelector('#rentalType');
+const pricesTable = document.querySelector('#rentals');
 
 async function getLinks(linksURL) {
     let response = await fetch(linksURL);
     let data = await response.json();
 
-    console.log(data);
+    console.log('suck', data);
     displayLinks(data.prices);
-    displayList(data.prices);
+    
 }; 
 
 getLinks(linksURL);
 
 const displayLinks = (prices) => {
     prices.forEach((price) => {
-        let table = document.createElement("tr");
-        table.setAttribute('class', 'rentalPricing');
+        let row = document.createElement("tr");
+        row.setAttribute('class', 'rentalPricing');
 
         let rentalType = document.createElement("td");
         rentalType.textContent = price.rentalType;
-        table.appendChild(rentalType);
+        row.appendChild(rentalType);
 
         let maxPerson = document.createElement("td");
         maxPerson.textContent = price.maxPerson;
-        table.appendChild(maxPerson);
+        row.appendChild(maxPerson);
 
         let reservationHalf = document.createElement("td");
         reservationHalf.textContent = price.reservationHalf;
-        table.appendChild(reservationHalf);
+        row.appendChild(reservationHalf);
 
         let reservationFull = document.createElement("td");
         reservationFull.textContent = price.reservationFull;
-        table.appendChild(reservationFull);
+        row.appendChild(reservationFull);
 
         let walkHalf = document.createElement("td");
         walkHalf.textContent = price.walkHalf;
-        table.appendChild(walkHalf);
+        row.appendChild(walkHalf);
 
         let walkFull = document.createElement("td");
         walkFull.textContent = price.walkFull;
-        table.appendChild(walkFull);
+        row.appendChild(walkFull);
 
         
       
-
-        console.log(prices);
-        pricesTable.appendChild(price);
+        
+        console.log('bacon', price);
+        pricesTable.appendChild(row);
+        console.log('bacon', price);
     })
      
 
