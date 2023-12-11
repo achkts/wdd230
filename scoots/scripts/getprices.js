@@ -2,7 +2,7 @@ const baseURL = "https://achkts.github.io/wdd230/scoots/scootsIndex.html";
 
 const linksURL = "https://achkts.github.io/wdd230/scoots/data/prices.json";
 
-const prices = document.querySelector('#rentalType');
+const pricesTable = document.querySelector('#rentalType');
 
 async function getLinks(linksURL) {
     let response = await fetch(linksURL);
@@ -48,7 +48,7 @@ const displayLinks = (prices) => {
       
 
         console.log(prices);
-        prices.appendChild(price);
+        pricesTable.appendChild(price);
     })
      
 
