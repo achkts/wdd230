@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <meta name="description" content="Page to make reservations for scooters with Scoots in Cozumel">
+    <meta name="author" content="Audrey Checketts">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Audrey Checketts - Scoots Rental in Cozumel">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Scoots Rentals</h1>
+            <img loading="lazy" onclick="location.href='scootsIndex.html'" src="images/scootsLogo.png" alt="Logo with a red scooter that says Scoots Scooter rental Adventure awaits">
+        </div>
+    </header>
+    <nav class="hidden">
+        <a href="scootsIndex.html" class="active">Home</a>
+        <a href="rentals.html" class="">Rentals</a>
+        <a href="reservations.html" class="">Reservations</a>
+        <a href="contact.html" class="">Contact Us</a>
+        
+    </nav>
+    <main>
+        <h2>Rental Services and Agreements</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+        </ul>
+        
+
+        <div class="reservationForm">
+            <h2>Reservation Rental Form</h2>
+                <form method="get" action="thankyou.html"> 
+
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name*<input type="text" name="lname" required></label>
+                        <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label>Home State/Country <input type="text" name="Country"></label>
+                        <label>Cruise Line <input type="text" name="name"></label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dates Needed</legend>
+                        <label>Start Date<input type="date"></label>
+                        <label>End Date<input type="date"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Rental Vehical</legend>
+                        <div>Scooters</div>
+                        <label><input type="radio" name="scooters" value="none">None</label>
+                        <label><input type="radio" name="scooters" value="metropolitan">Honda Metropolitan - 1 person</label>
+                        <label><input type="radio" name="scooters" value="dio">Honda Dio - 2 person</label>
+                        <label><input type="radio" name="scooters" value="pcx150">Honda PCX150 - 2 person</label>
+                        
+                        <div>ATVs</div>
+                        <label><input type="radio" name="atvs" value="none">None</label>
+                        <label><input type="radio" name="atvs" value="pioneer">Honda Pioneer - 4 person</label>                    
+
+                        <div>Jeeps</div>
+                        <label><input type="radio" name="jeeps" value="none">None</label>
+                        <label><input type="radio" name="jeeps" value="jeepFourDoor">Wrangler - 4 door with a/c - 5 person</label>
+                        <label><input type="radio" name="jeeps" value="jeepTwoDoor">Wrangler - 2 door - 4 person</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Rental Details</legend>
+                        
+                        <label>How many vehicles (if more than 5 are needed, please contact our office)
+                            <select name="vehicles">
+                                <option value="">Please select</option>
+                                <option value="number">1</option>
+                                <option value="number">2</option>
+                                <option value="number">3</option>
+                                <option value="number">4</option>
+                                <option value="number">5</option>
+                            </select>
+                        </label>
+                        <label><input type="checkbox" name="agreements" value="yes">Have read and agree to rental services and agreements.</label>
+                    </fieldset>
+
+                    
+                    <fieldset>
+                        <legend>Special Accommodations/Comments</legend>
+                        <input type="text" name="comments">
+                    </fieldset>
+                    
+                    <input type="submit" value="Make My Reservation">
+                </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">1969</span> - Audrey Checketts - Utah</p>
+        <p id="lastModified">1981</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+    <meta name="description" content="A motor scooter rental company on Cozumel">
+    <meta name="author" content="Audrey Checketts">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="stylesheet" href="styles/base.css"> -->
+    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:site_name" content="Scoots Rental Company">
+    <meta property="og:title" content="Audrey Checketts - Scoots Rental in Cozumel">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+</head>
+<body>
+    <header>
+        <h1>Scoots Rentals</h1>
+        <img loading="lazy" onclick="location.href='scootsIndex.html'" src="images/scootsLogo.png" alt="Logo with a red scooter that says Scoots Scooter rental Adventure awaits">                
+    </header>
+    <nav class="hidden">
+        <a href="scootsIndex.html" class="active">Home</a>
+        <a href="rentals.html" class="">Rentals</a>
+        <a href="reservations.html" class="">Reservations</a>
+        <a href="contact.html" class="">Contact Us</a>
+    </nav>
+    <main>
+        <div class="hero-image">
+            <img class="hero-image" loading="lazy" src="images/cozuBeachhero_1000x423_1_optimized.webp" alt="beautiful beach water in Cozumel">
+        </div>
+        <div class="weather-card">
+            <h3>Current Weather in Cozumel:</h3>
+            <img id="weather-icon">
+            <div id="current-temp"></div>
+            <div id="current-temp-feel"></div>
+            <div id="current-humidity"></div>
+            <h3>Daily Forecast:</h3>
+            <div id="temp-max"></div>
+            <div id="temp-min"></div>
+            
+        </div>
+        <section>
+            <div class="hero-content">            
+                <h1 class="hero-title">
+                    Get Out and Adventure
+                </h1>
+                <h1 class="hero-subtitle">
+                    Fun and affordable options to make exploring more enjoyable!
+                </h1>
+                <button type="button" class="hero-button" onclick="location.href='rentals.html'">
+                    Vehicle Options &raquo;
+                </button>
+            </div>
+        </section>
+        <section class="scootsDescription">
+            <h2>Who We Are:</h2>
+            <p>A motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.</p>
+            <img loading="lazy" src="images/mainCozuSign_1_400x250_1_optimized.webp" alt="Picture of a bright and colorful spelling of Cozumel">
+            <p>We are an owner-operated company that caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.</p>
+            <img loading="lazy" src="images/scootsCruise_400x300.webp" alt="Picture of a scooter driving down the street near the cruise ships and shopping plaza">
+            <p>We are a friendly and easy to rent service of motor scooters, jeeps and side-by-sides (ATVs).</p>
+            <img loading="lazy" src="images/stingRayCozu_400x267_1_optimized.webp" alt="">
+            <p>Come and explore all Cozumel has to offer and rent from us today!</p>
+            <img loading="lazy" src="images/cozuRuins_1_400x267_1_optimized.webp" alt="Picture of large old ruins in the jungle">
+            <button type="button" onclick="location.href='rentals.html'">Reserve Today!</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear">1969</span> - Audrey Checketts - Utah</p>
+        <p id="lastModified">1981</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
