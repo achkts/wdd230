@@ -169,15 +169,19 @@ input[type=submit] {
 }
 
 
-footer, footer p{
+footer, footer p, footer a, .social{
     background-color: var(--accent4-color);
+    font-size: 1em;
     color: white;
-    padding: 25px 50px;
-    margin-top: 25px;
+    padding: 10px 15px;
+    margin-top: 50px 0 25px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
+
+
 
 
 /* Home */
@@ -335,7 +339,7 @@ tbody tr:nth-child(odd) {
     box-shadow: 10px 10px 20px #555125;
     display: inline-flex;
     justify-content: center;
-    margin: 10px 50px auto;
+    margin: 10px 50px 25px 10px;
 }
 
 .vehicleTitle {
