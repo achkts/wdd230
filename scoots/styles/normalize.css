@@ -53,12 +53,12 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 25px;
+    font-size: 32px;
 }
 
 h2 {
     margin-top: 30px;
-    font-size: 2em;
+    font-size: 2.5em;
     text-decoration: underline;
 }
 
@@ -71,6 +71,11 @@ h2, h3{
 
 h3 {
     font-size: 1.5em;
+}
+
+p {
+    color:#0BBEBD;
+    font-size: 23px;
 }
 
 #menu::before {
@@ -104,13 +109,12 @@ nav a {
 
 nav a:hover {
     color: #ffe380;
-    font-weight: bold;
     text-decoration: underline;
    
 
 }
 .active::before, .active::after {
-    content: "🌴";
+    content: "🏝️";
 }
 
 .nav-logo {
@@ -120,7 +124,7 @@ nav a:hover {
 
 button {
     background-color: #ffe380;
-    border: 1px solid #555125;
+    border: 1px solid #d5d4ca;
     border-radius: 25px;
     size: 50px;
     color:  black;
@@ -165,7 +169,7 @@ input[type=submit] {
 }
 
 
-footer {
+footer, footer p{
     background-color: var(--accent4-color);
     color: white;
     padding: 25px 50px;
@@ -178,44 +182,97 @@ footer {
 
 /* Home */
 
-.scootsDescription {
+#hCards {
     display: grid;
-    grid-template-columns: repeat(4, fr);
-    text-align: center;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 0 2em;
+    gap: 1em;
 }
 
-.scootsDescription p {
-    text-align: left;
-    
+#hCards h2 {
+    grid-column: 1/5;
+    grid-row: 1;
+    justify-content: center;
 }
 
-#cozuSign, #ruins {
-    grid-column: 1/2;
-    margin-bottom: 25px;
+.mainP {
+    grid-column: 6/9;
+    grid-row: 2;
+}
+
+.mainP2 {
+   grid-column: 6/9;
+   grid-row: 3;
+   
+}
+
+
+
+#hCards p {
+    grid-column: 6/9;
+    grid-row: 6;
+    text-indent: 20px;
+}
+
+#cozuSign {
+   grid-column: 1/5;
+   grid-row: 2;
+    margin-bottom: -150px;
 }
 
 #streetView {
-    grid-column: 3/5;
+    grid-column: 2/5;
+    grid-row: 3;
+    margin-top: 15px;
+    
+    
+}
+.mainP3 {
+    margin-top: 50px;
+    margin-left: 25px;
+    padding: 10px;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 4;
+}
+
+#stingRayBay {
+    grid-column: 4/9;
+    grid-row: 4;
+}
+
+#ruins {
+    grid-column: 5/9;
+    grid-row: 5;
 }
 
 .cozu {
-    border: 5px solid #977A5D;
+    border: 5px ridge #977A5D;
     box-shadow: 5px 5px 20px #056B83;
-    display: inline-flex;
-    justify-content: center;
     margin: 50px 50px auto;
 }
 
 .weather-card {
-  display: flex;
-  flex-direction: row;
-    
- 
+    border: 5px double #ffe380;
+    border-radius: 25px;
+    grid-column: 1/4;
+    grid-row: 5;
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 15px;
+    text-indent: 2px;
+    box-shadow: 5px 5px 10px rgb(159, 157, 139) inset;
+    width: 250px;
+    text-align: center;
+     
 }
 
 
-.scootsDescription p{
-    color: #0BBEBD;
+
+#mainButton {
+    grid-column: 6/9;
+    grid-row: 7;
+    margin-left: 100px;
 }
 
 /* Rentals */
