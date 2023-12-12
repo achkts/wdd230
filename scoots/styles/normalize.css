@@ -180,7 +180,7 @@ footer {
 
 .scootsDescription {
     display: grid;
-    grid-template-columns: 1fr  2fr;
+    grid-template-columns: repeat(4, fr);
     text-align: center;
 }
 
@@ -195,7 +195,7 @@ footer {
 }
 
 #streetView {
-    grid-column: 3/4;
+    grid-column: 3/5;
 }
 
 .cozu {
@@ -221,6 +221,7 @@ footer {
 /* Rentals */
 .rentaltext {
     font-size: 50px;
+    
 }
 
 table {
@@ -276,7 +277,18 @@ tbody tr:nth-child(odd) {
     box-shadow: 10px 10px 20px #555125;
     display: inline-flex;
     justify-content: center;
-    margin: 50px 50px auto;
+    margin: 10px 50px auto;
+}
+
+.vehicleTitle {
+    margin-top: 35px;
+}
+
+.rentalImageButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Reservations */
