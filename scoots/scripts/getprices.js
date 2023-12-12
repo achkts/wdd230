@@ -8,7 +8,7 @@ async function getLinks(linksURL) {
     let response = await fetch(linksURL);
     let data = await response.json();
 
-    console.log('suck', data);
+    console.log(data);
     displayLinks(data.prices);
     
 }; 
@@ -29,27 +29,27 @@ const displayLinks = (prices) => {
         row.appendChild(maxPerson);
 
         let reservationHalf = document.createElement("td");
-        reservationHalf.textContent = price.reservationHalf;
+        reservationHalf.textContent = `$${price.reservationHalf}`;
         row.appendChild(reservationHalf);
 
         let reservationFull = document.createElement("td");
-        reservationFull.textContent = price.reservationFull;
+        reservationFull.textContent = `$${price.reservationFull}`;
         row.appendChild(reservationFull);
 
         let walkHalf = document.createElement("td");
-        walkHalf.textContent = price.walkHalf;
+        walkHalf.textContent = `$${price.walkHalf}`;
         row.appendChild(walkHalf);
 
         let walkFull = document.createElement("td");
-        walkFull.textContent = price.walkFull;
+        walkFull.textContent = `$${price.walkFull}`;
         row.appendChild(walkFull);
 
         
       
         
-        console.log('bacon', price);
+        console.log(price);
         pricesTable.appendChild(row);
-        console.log('bacon', price);
+        
     })
      
 
