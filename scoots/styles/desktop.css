@@ -28,6 +28,8 @@ body, html {
     background-color: var(--secondary-color);
 }
 
+
+
 #content {
     background-color: white;
     justify-content: center;
@@ -78,14 +80,7 @@ p {
     font-size: 23px;
 }
 
-#menu::before {
-	content: "☰";
-    grid-column: 2/3;
-}
 
-#menu.open::before {
-	content: "❌";
-}
 .active {
     
     color: #ffe380;

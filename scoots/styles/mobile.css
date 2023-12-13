@@ -1,0 +1,12 @@
+@media screen and (max-width: 300px) {
+
+    #menu::before {
+        content: "☰";
+        grid-column: 2/3;
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
+    
+}
