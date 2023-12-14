@@ -6,9 +6,10 @@
     <title>Scoots</title>
     <meta name="description" content="A motor scooter rental company on Cozumel">
     <meta name="author" content="Audrey Checketts">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/desktop.css">
-    <!-- <link rel="stylesheet" href="styles/base.css"> -->
-    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:site_name" content="Scoots Rental Company">
     <meta property="og:title" content="Audrey Checketts - Scoots Rental in Cozumel">
@@ -18,7 +19,7 @@
 <body>
     <div id="content">
         <header>
-                            
+            <div id="menu"></div>  
             <nav class="hidden">
                 <a href="scootsIndex.html" class="active">Home</a>
                 <a href="rentals.html" class="">Rentals</a>
@@ -48,24 +49,22 @@
                 </div>
             </section>
             <div id="weatherBanner">
-                <p>
-                  Today's Weather 
-                </p>
+                <div id="temp-max"></div> 
                 <div id="bannerClose">❌</div>
               </div>
             <div id="hCards">
                             
                 
                     <h2>Who We Are:</h2>
-                    
+                    <div class="mainP">
+                        <p>We are a motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.</p>
+                    </div>
                     <img id="streetView" class="cozu" loading="lazy" src="images/scootsCruise_400x300.webp" alt="Picture of a scooter driving down the street near the cruise ships and shopping plaza">
                     <img id="cozuSign" class="cozu" loading="lazy" src="images/mainCozuSign_1_400x250_1_optimized.webp" alt="Picture of a bright and colorful spelling of Cozumel">
-                    <div class="mainP">
-                        <p>A motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.</p>
-                    </div>
+                   
                     <div class="mainP2">
-                        <p>We are an owner-operated company that caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.</p>
-                        <p>We are a friendly and easy to rent service of motor scooters, jeeps and side-by-sides (ATVs).</p>
+                        <p>We are also an owner-operated company that caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships.</p>
+                        <p>And we are a friendly and easy to rent service of motor scooters, jeeps and side-by-sides (ATVs).</p>
                     </div>
                     <img id="stingRayBay" class="cozu" loading="lazy" src="images/stingRayCozu_400x267_1_optimized.webp" alt="">
                     <div class="mainP3">
@@ -86,9 +85,9 @@
                     <div id="current-temp"></div>
                     <div id="current-temp-feel"></div>
                     <div id="current-humidity"></div>
-                    <h3>Daily Forecast:</h3>
-                    <div id="temp-max"></div>
-                    <div id="temp-min"></div>
+                    <h3>Tomorrow's Forecast:</h3>
+                    <div id="tomtemp-max"></div>
+                    <div id="tomtemp-min"></div>
                     
                 </div>
                 
@@ -100,8 +99,8 @@
         <footer>
             <p>&copy; <span id="currentYear">1969</span> - Audrey Checketts - WDD230</p>
             <p id="lastModified">1981</p>
-            <p>Contact Us<a href="contact.html"></a></p>
-            <p>Attributions</p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p><a href="attributions.html">Attributions</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebookIcon.png" alt="fb icon">
@@ -115,7 +114,9 @@
             </div>
         </footer>
         <script src="scripts/getdates.js"></script>
+        
         <script src="scripts/weather.js"></script>
+        <script src="scripts/weatherbanner.js"></script>
         <script src="scripts/responsivemenu.js"></script>
     </div>
 </body>

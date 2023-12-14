@@ -1,4 +1,20 @@
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 550px) {
+    .hidden {
+        display: none;
+    }
+
+    header {
+        background-color: #056B83;
+    }
+    #menu {
+        background-color: #056B83;
+        color: white;
+        padding: 25px;
+        width: 25px;
+        grid-column: 3;
+        grid-row: 1;
+        
+    }
 
     #menu::before {
         content: "☰";
@@ -8,5 +24,61 @@
     #menu.open::before {
         content: "❌";
     }
+
+    
+
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .hero-text {
+        font-size: 10px;
+    }
+
+    button {
+        padding: 16px 20px;
+    }
+
+  
+    #hCards {
+        display: block;
+        font-size: 15px;
+    }
+
+    .cozu {
+        margin: 0;
+        width: 100%;
+    }
+
+    .mainP2 {
+        margin-top: 165px;
+    }
+
+    .weather-card {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .pricingTable {
+        overflow: scroll;
+    }
+
+    .scooters {
+        display: block;
+        width: 100%;
+    }
+
+    .vehicle {
+        margin: 0 0 35px 0;
+        width: 100%;
+        min-width: 300px;
+    }
+
+
     
 }

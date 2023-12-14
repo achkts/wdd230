@@ -7,8 +7,9 @@
     <meta name="description" content="Renting atvs, scooters for adventure in Cozumel">
     <meta name="author" content="Audrey Checketts">
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css"> -->
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Audrey Checketts - Scoots Rental in Cozumel">
     <meta property="og:type" content="website">
@@ -17,7 +18,8 @@
 </head>
 <body>
     <div id="content">
-        <header>           
+        <header> 
+            <div id="menu"></div>           
             <nav class="hidden">
                 <a href="scootsIndex.html" class="">Home</a>
                 <a href="rentals.html" class="active">Rentals</a>
@@ -35,7 +37,7 @@
                 </div>
             </div>
             <h2>Pricing</h2>  
-            <section class="pricingTable"> 
+            <div class="pricingTable" > 
                 
                 <table>
                     <caption>
@@ -65,48 +67,60 @@
                    
                 </table>
                 
-            </section>
+            </div>
             
-            <div>
+            <div class="scooters">
                 <h2>Scooters</h2>
                 <h3 class="vehicleTitle">Honda Metropolitan (49cc) - 1 person</h3>
-                <div class="rentalImageButton">
+                <div class="rentalImageButton"> 
                     <img class="vehicle" loading="lazy" src="images/metro_400x293.webp" alt="Picture of a pink Honda Metropolitan one person scooter">
+                </div>
+                <div class="rentalImageButton">
                     <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
                 </div>
 
-                <h3 class="vehicleTitle">Honda Dio (110cc) - 2 person</h3>
-                <div class="rentalImageButton">
+                <h3 class="vehicleTitle">Honda Dio (110cc) - 2 person</h3> 
+                <div class="rentalImageButton">             
                     <img class="vehicle" loading="lazy" src="images/dio_400x267.webp" alt="Picture of an orange Honda Dio two person scooter">
+                </div>
+                <div class="rentalImageButton">
                     <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
                 </div>
 
-                <h3 class="vehicleTitle">Honda PCX150 (149cc) - 2 person</h3>
-                <div class="rentalImageButton">
+                <h3 class="vehicleTitle">Honda PCX150 (149cc) - 2 person</h3> 
+                <div class="rentalImageButton">               
                     <img class="vehicle" loading="lazy" src="images/pcx_400x300.webp" alt="Picture of a red Honda PCX150 two person scooter">
+                </div>
+                <div class="rentalImageButton">
                     <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
                 </div>
             </div>
-            <div>
+            <div class="atvs">
                 <h2>ATVs</h2>
                 <h3 class="vehicleTitle">Honda Pioneer 1000 - 4 person</h3>
                 <div class="rentalImageButton">
                     <img class="vehicle" loading="lazy" src="images/pioneerATV_400x264_1_optimized.webp" alt="Picture of a red and black Honda Pioneer 1000 ATV four person vehicle">
+                </div>
+                <div class="rentalImageButton">
                     <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
                 </div>
             </div>
-            <div>
+            <div class="jeeps">
                 <h2>Jeeps</h2>
                 <h3 class="vehicleTitle">Jeep Wrangler - 4 door manuel with A/C - 5 person</h3>
                 <div class="rentalImageButton">
                     <img class="vehicle" loading="lazy" src="images/jeepFourL_400x300.webp" alt="Picture of a white Jeep Wrangler with four doors and has Air Conditioning">
+                </div>
+                <div class="rentalImageButton">
                     <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
                 </div>
                 
                 <h3 class="vehicleTitle">Jeep Wrangler - 2 door - open air - manuel - 4 person</h3>
                 <div class="rentalImageButton">
                     <img class="vehicle" loading="lazy" src="images/softTopjeep2dr_400x300.webp" alt="Picture of a white Jeep Wrangler with two doors open air style">
-                    <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>
+                    </div>
+                <div class="rentalImageButton">
+                    <button type="button" onclick="location.href='reservations.html'" >Reserve Now</button>                 
                 </div>
             </div>
                 
@@ -116,8 +130,8 @@
         <footer>
             <p>&copy; <span id="currentYear">1969</span> - Audrey Checketts - WDD230</p>
             <p id="lastModified">1981</p>
-            <p>Contact Us<a href="contact.html"></a></p>
-            <p>Attributions</p>
+            <p><a href="contact.html">Contact Us</a></p>
+            <p><a href="attributions.html">Attributions</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
                     <img src="images/facebookIcon.png" alt="fb icon">

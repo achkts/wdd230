@@ -1,0 +1,24 @@
+@media screen and (max-width: 1150px) {
+    
+    .hero-text {
+        font-size: 15px;
+    }
+    #hCards {
+        display: block;
+        
+    }
+
+    .mainP2 {
+        margin-top: 175px;
+    }
+
+    .weather-card {
+        margin: 0 auto 25px auto;      
+        
+    }
+
+    footer {
+        display: block;
+    }
+
+}

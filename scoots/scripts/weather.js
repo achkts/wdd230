@@ -3,7 +3,9 @@ const currentTempfeel = document.querySelector('#current-temp-feel');
 const tempHumidity = document.querySelector('#current-humidity');
 const weatherIcon = document.querySelector('#weather-icon');
 const tempMax = document.querySelector('#temp-max');
-const tempMin = document.querySelector('#temp-min');
+const tomTempMin = document.querySelector('#tomtemp-max');
+const tomTempMax = document.querySelector('#tomtemp-min');
+
 
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=20.512&lon=-86.947&units=imperial&appid=b46c4b29082a0d1995355648e99e733d'
@@ -25,7 +27,6 @@ async function apiFetch(url) {
 };
 
 
-
 apiFetch(url);
 
 const displayResults = (weatherEvent) => {
@@ -37,9 +38,44 @@ const displayResults = (weatherEvent) => {
    
     const iconsrc= `https://openweathermap.org/img/w/${weatherEvent.weather[0].icon}.png`;
 
-    tempMax.innerHTML = `Max Temp.: ${Math.round(weatherEvent.main.temp_max)}&deg; F`;
-    tempMin.innerHTML = `Min Temp.: ${Math.round(weatherEvent.main.temp_min)}&deg; F`;
-    
+    tempMax.innerHTML = `Today's High Temperature will be: ${Math.round(weatherEvent.main.temp_max)}&deg; F`;
+        
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 }
+
+const tomorrowDate = new Date();
+tomorrowDate.setDate(tomorrowDate.getDate() + 1);
+tomorrowDate.setHours(1500);
+
+
+const tomorrowUrl = `https://api.openweathermap.org/data/2.5/weather?lat=20.512&lon=-86.947&units=imperial&dt=${tomorrowDate.getTime()}&appid=b46c4b29082a0d1995355648e99e733d`
+
+async function apiFetchTomorrow(tomorrowUrl) {
+    try {
+        const response = await fetch(tomorrowUrl);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResultsTomorrow(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }    
+
+};
+
+console.log('pig', tomorrowUrl)
+
+apiFetchTomorrow(tomorrowUrl);
+
+const displayResultsTomorrow = (weatherEvent) => {
+
+    
+     tomTempMax.innerHTML = `High Temperature of: ${Math.round(weatherEvent.main.temp_max)}&deg; F`;
+     tomTempMin.innerHTML = `Low Temperature of: ${Math.round(weatherEvent.main.temp_min)}&deg; F`;
+
+ 
+ }
