@@ -42,7 +42,7 @@ body {
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url("/scoots/images/cozuBeachhero_1000x423_1_optimized.webp");
+    background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url("../images/cozuBeachhero_1000x423_1_optimized.webp");
     height: 50%;
     min-height: 423px;
     background-position: center;
